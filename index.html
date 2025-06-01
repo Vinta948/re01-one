@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>notes in live</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+      }
+      .main {
+        width: 800px;
+        margin: auto;
+      }
+      .header,
+      .nav,
+      .container,
+      .footer {
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .header {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .nav {
+        padding: 10px 200px;
+        display: inline-block;
+      }
+      .nav a:hover {
+        color: #110c0c;
+      }
+      .lside {
+        width: 200px;
+        float: left;
+      }
+      #nav {
+        position: relative;
+        text-align: center;
+        border: none;
+        border-radius: 10cm;
+        display: flex;
+        list-style: none;
+        background: #f5f5f5;
+        box-shadow: 20px 40px 40px #000000;
+        padding: 10px;
+        margin-bottom: 50px;
+      }
+      #nav li a {
+        position: relative;
+        padding: 15px 30px;
+        font: 500 24px "优设标题黑";
+        border: none;
+        outline: none;
+        color: rgb(70, 100, 180);
+        display: inline-block;
+        text-decoration: none;
+        z-index: 3;
+      }
+      .slide1,
+      .slide2 {
+        position: absolute;
+        display: inline-block;
+        height: 60px;
+        border-radius: 10cm;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+      }
+      .slide1 {
+        background-color: rgb(170, 190, 255);
+        z-index: 2;
+      }
+      .slide2 {
+        opacity: 0;
+        background-color: rgba(170, 190, 255, 0.5);
+        z-index: 1;
+        box-shadow: 0 0 20px #ffffffaa inset;
+      }
+
+      .squeeze {
+        transform: scale(0.9);
+      }
+      .rside {
+        width: 200px;
+        float: right;
+      }
+      .content {
+        margin: 0px 205px;
+      }
+      .lside,
+      .rside,
+      .content {
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      .footer {
+        background-color: aliceblue;
+        padding: 10px;
+
+        text-align: center;
+      }
+      @media screen and (max-width: 700px) {
+        .lside,
+        .rside,
+        .content {
+          width: 100%;
+          margin: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background: linear-gradient(pink, rgb(112, 112, 199))">
+    <div class="main">
+      <div class="header">
+        <h1>送给黄梓晴的19岁😇</h1>
+        <p style="margin: 10px">🎂世界的第19年 你好啊~💐</p>
+      </div>
+      <ul id="nav">
+        <li class="slide1"></li>
+        <li class="slide2"></li>
+        <li style="margin-left: 60px"><a href="#">关于我们</a></li>
+        <li><a href="#">我眼中的hzq</a></li>
+        <li><a href="#">第N封信</a></li>
+        <li><a href="#">许愿墙</a></li>
+      </ul>
+
+      <div class="container">
+        <div class="lside">
+          <h2 style="text-align: center">我是二人照</h2>
+          <img
+            src="photo2.jpg"
+            alt="第一张二人照"
+            width="200px"
+            height="200px"
+          />
+          <p style="text-align: center; font-size: xx-small">
+            202？年度cc最爱的合照
+          </p>
+        </div>
+        <div class="rside">
+          <h2 style="text-align: center">我是二人照</h2>
+          <img src="photo3.jpg" alt="照片" width="200px" height="200px" />
+          <p style="text-align: center; font-size: xx-small">
+            202？年？铺上合照
+          </p>
+        </div>
+        <div class="content">
+          <h2 style="text-align: center">我是大合照</h2>
+          <img src="photo1.jpg" alt="big family" width="380px" height="350px" />
+          <p style="text-align: center; font-size: xx-small">
+            2021年高(一)24班分班前合照
+          </p>
+        </div>
+      </div>
+      <div
+        class="footer"
+        style="line-height: 1.5; margin-top: 50px; margin-bottom: 20px"
+      >
+        <p>总是觉得 算法是独属于我们这个时代的标签</p>
+        <p>我们的故事也自然而然地属于算法时代下的一粒尘埃</p>
+        <p>每一章可以有几千行代码</p>
+        <p>多到不起眼</p>
+        <p>多到被遗忘</p>
+        <p>但是</p>
+        <p><strong>当人类开始写下第一篇日记时</strong></p>
+        <p>每一节</p>
+        <p>便成了永恒的存在</p>
+      </div>
+    </div>
+  </body>
+</html>
